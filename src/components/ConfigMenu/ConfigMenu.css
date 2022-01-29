@@ -1,0 +1,124 @@
+.config_menu {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+    list-style: none;
+    background-color: #EAEBEF;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: height .4s;
+    -webkit-transition: height .4s;
+    -moz-transition: height .4s;
+    -ms-transition: height .4s;
+    -o-transition: height .4s;
+    box-shadow: 3px 3px 5px rgb(31, 31, 31);
+    user-select: none;
+    z-index: 100;
+}
+.config_menu * {
+    user-select: none;
+}
+.config_menu li {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+}
+.config_menu--li{
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+}
+.config_menu--li.close{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+.config_menu li:first-child:hover i {
+    background-color: gray;
+    color: #fff;
+}
+.config_menu i {
+    color: #555;
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.config_menu li:hover i {
+    background-color: #ccc;
+}
+.config_menu li:hover .tooltip {
+    visibility: visible;
+    opacity: 1;}
+.config_menu li:first-child i {
+    width: 50px;
+    height: 50px;
+}
+.config_menu li p {
+    position: absolute;
+    padding: 0 .2rem;
+    top: 25px;
+    right: 2px;
+    font-size: .8rem;
+    font-weight: 600;
+    background-color:cornflowerblue;
+    color: #fff;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.config_menu li span {
+    color: #fff;}
+
+.config_menu li .tooltip {
+    display: inline-block;
+    position: absolute;
+    background-color: #313443;
+    padding: 8px 15px;
+    border-radius: 3px;
+    margin-top: -1px;
+    right: 58px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 13px;
+    letter-spacing: .5px;}
+    
+.config_menu li .tooltip:before {
+        content: '';
+        display: block;
+        position: absolute;
+        right: -4px;
+        top: 10px;
+        transform: rotate(45deg);
+        width: 10px;
+        height: 10px;
+        background-color: inherit;}

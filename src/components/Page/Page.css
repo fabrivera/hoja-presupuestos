@@ -1,0 +1,345 @@
+.page {
+	margin: 2rem auto;
+	width: 930px;
+	min-height: 1315px;
+	background-color: var(--page-background);
+    z-index: 2;
+}
+
+.title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 182px;
+    background-color: var(--primary);
+}
+.title .logo {
+    width: 354px;
+    margin-left: 61px;
+    margin-right: 206px;
+}
+.logo-color {
+    fill: var(--header-color);
+}
+.title h1 {
+    color: var(--header-color);
+    font-weight: 800;
+}
+.blue-line {
+    position: absolute;
+    width: 387px;
+    height: 18px;
+    right: 0;
+    bottom: -9px;
+}
+.top-bar {
+    fill: var(--secondary);
+}
+.user-info {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    max-height: 200px;
+    height: 200px;
+    padding: 33px 55px;
+}
+.user-info h5 {
+    color: var(--primary);
+    margin-bottom: 12px;
+    font-size: .9rem;
+    font-weight: 600;
+}
+.user-info h2 {
+    margin-bottom: 18px;
+}
+.user-info h4 {
+    margin-bottom: 12px;
+    font-weight: 400;
+}
+.user-info .date {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.bar-primary {
+    fill: var(--primary);
+}
+.bar-secondary {
+    fill: var(--secondary);
+}
+
+.table {
+    position: relative;
+    margin: auto;
+    width: 828px;
+    border-collapse: collapse;
+    min-height: 450px;
+}
+.table-header {
+    position: absolute;
+}
+.table-header img {
+    width: 100%;
+}
+.table table {
+    position: relative;
+    width: 100%;
+    border-collapse: collapse;
+}
+.table table tr:first-child th {
+    height: 50px;
+    vertical-align: middle;
+    color: #fff;
+    font-size: .9rem;
+}
+.description {
+    text-align: left;
+    padding-left: 26px;
+    width: 495px;
+}
+.price {
+    width: 133px;
+}
+.count {
+    width: 88px;
+}
+.total {
+    width: 111px;
+}
+.table tbody {
+    position: relative;
+    width: 827px;
+}
+.table tr {
+    cursor: pointer;
+    position: relative;
+}
+.table tbody tr:hover {
+    background-color: #eee;
+}
+.table tbody td {
+    font-size: .9rem;
+    text-align: center;
+    padding-top: 23px;
+    vertical-align: top;
+    border-bottom: 2px dotted gray;
+}
+.table tbody td:first-child {
+    padding-left: 26px;
+    text-align: left;
+}
+.table tbody td {
+    font-weight: 600;
+}
+.table tbody td h4 {
+    padding-bottom: 10px;
+}
+.table tbody td p {
+    font-size: .8rem;
+    padding-bottom: 17px;
+    font-weight: 500;
+}
+.table .spaceSelected {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 79px;
+}
+.table .spaceSelected > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.table .addForm:hover {
+    background-color: transparent;
+}
+.table input {
+    border: none;
+    border-bottom: 2px solid lightgray;
+    width: 90%;
+    background-color: transparent;
+}
+.table input:focus, table input:active {
+    outline:none !important;
+    border: none;
+    border-bottom: 2px solid #0d308f;
+}
+.table .addItem {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+    cursor: pointer;
+}
+.table .addItem i{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.table .spaceSelected:hover .addItem {
+    background-color: var(--primary);
+}
+.table .spaceSelected:hover h3 {
+    color: #000;
+}
+.table .spaceSelected h3 {
+    margin-left: .7rem;
+    color: var(--secondary);
+}
+.table .button-add-small {
+    margin-top: .3rem;
+    padding: .2rem;
+    border: none;
+    background-color: var(--secondary);
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+    cursor: pointer;
+}
+.table .button-add-small i {
+    color: #fff;
+    font-size: 1.2rem;
+}
+.table .button-add-small:hover {
+    background-color: var(--primary);
+}
+
+.information {
+    position: relative;
+    height: 369px;
+}
+.resume {
+    width: 312px;
+    float: right;
+    margin-right: 51px;
+}
+
+.resume table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.resume tr th {
+    text-align: left;
+    padding-left: 26px;
+    height: 51px;
+    color: #fff;
+    background-color: var(--secondary);
+}
+.resume tr td {
+    text-align: left;
+    padding-left: 26px;
+    height: 58px;
+}
+.resume tr th:last-child {
+    text-align: right;
+    width: 111px;
+    padding-right: 15px;
+}
+.resume tr td:last-child {
+    text-align: right;
+    padding-right: 15px;
+}
+.resume tr td {
+    border-bottom: 2px dotted gray;
+}
+.firma {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    padding-top: 125px;
+}
+.firma h4 {
+    width: 80%;
+    border-top: 2px dotted gray;
+    margin: auto;
+    padding-top: 9px;
+}
+.firma div {
+    position: absolute;
+    top: 55px;
+    left: 50px;
+}
+.info {
+    box-sizing: border-box;
+    width: 490px;
+    height: 369px;
+    float: left;
+    margin-left: 51px;
+    padding-top: 90px;
+    padding-left: 26px;
+}
+.info h3 {
+    color: var(--primary);
+    margin-bottom: 18px;
+}
+.info p {
+    max-width: 370px;
+}
+.info table {
+    margin-bottom: 20px;
+}
+.info table td {
+    width: 140px;
+    padding-bottom: 10px;
+}
+.info table tr td:first-child {
+    font-weight: 700;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 109px;
+
+    border-top: 2px solid var(--secondary);
+}
+.footer h3 {
+    padding: 1rem;
+    vertical-align: middle;
+}
+.footer h3 i {
+    position: relative;
+    margin-right: 7px;
+    color: #fff;
+    font-size: 1.1rem;
+}
+.footer h3 i::after {
+    content: "";
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    border-radius: 50%;
+    background-color: #262930;
+    z-index: -1;
+
+}
+.footer h3:last-child i::after {
+    left: -5px;
+}

@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import LateralBar from './components/LateralBar'
+import Page from './components/Page'
+import { PageContextProvider } from './context/pageContext';
 import './App.css';
 
 function App() {
+
+  const [pageId, setPageId] = useState()
+
+  const [ toPrint, setToPrint ] = useState(false)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <PageContextProvider>
+      <div className="App">
+        <LateralBar input={pageId} print={setToPrint}/>
+        <div className="content">
+          <Page returnPage={setPageId} print={toPrint}/>
+        </div>
+      </div>
+    </PageContextProvider>
   );
 }
 
